@@ -1,0 +1,14 @@
+<h2>page-preview works!</h2>
+<p>page-preview css='{{css}}'</p>
+<p>page-preview html='{{document}}'</p>
+<div>
+  <span>backgroundColor</span>
+  <button mat-icon-button (click)="changeBackgroundColorStyle()">
+    <mat-icon
+      aria-label="Change background color"
+      [ngStyle]="{'color': backgroundColor}">
+      favorite
+    </mat-icon>
+  </button>
+</div>
+<button (click)="changeFontSizeStyle('preview:fontSize')">changeFontSizeStyle</button>
